@@ -1,7 +1,7 @@
 # looks.digital
 
 ### Version
-0.4.1
+1.0.0
 
 ### Description
 devstack including:
