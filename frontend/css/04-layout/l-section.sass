@@ -1,0 +1,39 @@
+.l-section
+    padding: 50px 0    
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50% 
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column    
+        height: 100%
+    +bp($tablet)
+        padding: 0
+        height: 100vh        
+
+.l-section--home
+    background-image: url($imgPath + 'jpg/bg-01-mobile.jpg')
+    height: 100vh
+    +bp($tablet)
+        background-image: url($imgPath + 'jpg/bg-01-desktop.jpg')    
+
+.l-section--knowledge
+    background-image: url($imgPath + 'jpg/bg-02-mobile.jpg')
+    +bp($tablet)
+        background-image: url($imgPath + 'jpg/bg-02-desktop.jpg')    
+
+.l-section--work
+    background-image: url($imgPath + 'jpg/bg-03-mobile.jpg')
+    padding: 25px 0 50px 0    
+    .container    
+        flex-direction: row
+    +bp($tablet)
+        background-image: url($imgPath + 'jpg/bg-03-desktop.jpg')    
+
+.l-section--contact
+    background-image: url($imgPath + 'jpg/bg-04-mobile.jpg')
+    +bp($tablet)
+        background-image: url($imgPath + 'jpg/bg-04-desktop.jpg')    

@@ -1,0 +1,41 @@
+.m-work-box
+    position: relative
+    width: 255px
+    height: 155px
+    background-color: $black
+    border: 3px solid #282828
+    border-radius: 3px
+    display: flex
+    align-items: center
+    justify-content: center
+    &:before
+        content: ''
+        position: absolute
+        bottom: -3px
+        right: -3px
+        z-index: 1
+        width: 87px
+        height: 88px
+    +bp(1050px)
+        width: 305px
+        height: 205px
+
+.m-work-box--blue 
+    &:before
+        background-image: url($imgPath + 'png/corner-01.png')    
+
+.m-work-box--orange 
+    &:before
+        background-image: url($imgPath + 'png/corner-02.png')    
+
+.m-work-box--green
+    &:before
+        background-image: url($imgPath + 'png/corner-03.png')    
+
+.m-work-box--red
+    &:before
+        background-image: url($imgPath + 'png/corner-04.png')    
+
+.m-work-box--grey 
+    &:before
+        background-image: url($imgPath + 'png/corner-05.png')                                

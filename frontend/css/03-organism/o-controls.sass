@@ -1,0 +1,20 @@
+.l-controls
+    position: fixed
+    z-index: 2
+
+.l-controls--stepper
+    display: none
+    top: 50%
+    right: 15px
+    transform: translateY(-50%)
+    +bp($tablet)
+        display: block
+    +bp(1050px)
+        right: 40px            
+
+.l-controls--anchor
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+    +bp($tablet)
+        bottom: 45px    

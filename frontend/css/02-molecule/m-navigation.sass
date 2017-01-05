@@ -1,0 +1,33 @@
+.m-navigation
+
+.m-navigation--desktop
+    display: none
+    +bp($tablet)
+        display: block
+
+.m-navigation__list
+    display: flex
+
+.m-navigation__item
+    position: relative
+    +fz(20)
+    & + &
+        padding: 0 0 0 15px    
+        margin: 0 0 0 15px    
+        &:before
+            content: ''
+            position: absolute
+            left: -2px
+            top: 13px
+            width: 5px
+            height: 5px
+            background-color: $pink
+            border-radius: 50%
+
+    &.is-active
+        a
+            color: $pink
+    &:not(.is-active)
+        a
+            &:hover
+                text-decoration: underline

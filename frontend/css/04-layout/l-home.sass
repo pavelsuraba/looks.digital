@@ -1,0 +1,27 @@
+.l-home__heading
+    strong
+        +vh()
+
+.l-home__desctiption
+    text-align: center
+    +fz(20)
+    line-height: 1.3
+    margin: 20px auto 0 auto
+    max-width: 680px
+    color: $grey
+    strong
+        color: $white
+    +bp($tablet)
+        +fz(30)        
+
+.l-home__logo--full
+    height: height($imgPath + 'png/logo-full.png', 2)
+    width: width($imgPath + 'png/logo-full.png', 2)      
+    +bp($tablet)
+        height: height($imgPath + 'png/logo-full.png')    
+        width: width($imgPath + 'png/logo-full.png')    
+    
+
+.l-home__logo--small
+    +bp($tablet)
+        display: none
